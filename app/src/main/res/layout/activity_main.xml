@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.francis.newcalc.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="#ffff"
+            android:text="0"
+            android:textSize="50sp"
+            android:id="@+id/txt1"
+            android:onClick="onClick"
+            android:maxLines="2"
+            android:maxLength="20"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="1">
+        <Button
+            android:layout_width="369dp"
+            android:text="clear"
+            android:textSize="25dp"
+            android:background="#2001"
+            android:layout_height="65dp"
+            android:id="@+id/btnc"
+            android:onClick="onClickClear"
+            android:textColor="@android:color/holo_purple"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="7"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:id="@+id/btn7"
+            android:onClick="onClickNumber"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="8"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn8"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="9"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn9"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="+"
+            android:background="@android:color/darker_gray"
+            android:layout_width="92dp"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickOperator"
+            android:id="@+id/btnadd"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="6"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn6"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="5"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn5"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="4"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn4"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="-"
+            android:id="@+id/btnsub"
+            android:background="@android:color/darker_gray"
+            android:layout_width="92dp"
+            android:layout_height="94dp"
+            android:textSize="40dp"
+            android:onClick="onClickOperator"
+            android:textColor="?attr/actionModeSplitBackground" />
+    </LinearLayout>
+    `<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
+    <Button
+        android:text="1"
+        android:layout_width="89dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="94dp"
+        android:textSize="40dp"
+        android:onClick="onClickNumber"
+        android:id="@+id/btn1"
+        android:textColor="?attr/actionModeSplitBackground" />
+
+    <Button
+        android:text="2"
+        android:layout_width="89dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="94dp"
+        android:textSize="40dp"
+        android:onClick="onClickNumber"
+        android:id="@+id/btn2"
+        android:textColor="?attr/actionModeSplitBackground" />
+
+    <Button
+        android:text="3"
+        android:layout_width="89dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="94dp"
+        android:textSize="40dp"
+        android:onClick="onClickNumber"
+        android:id="@+id/btn3"
+        android:textColor="?attr/actionModeSplitBackground" />
+
+    <Button
+        android:text="*"
+        android:background="@android:color/darker_gray"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:textSize="40dp"
+        android:onClick="onClickOperator"
+        android:id="@+id/btnmul"
+        android:textColor="?attr/actionModeSplitBackground" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <Button
+            android:text="."
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="95dp"
+            android:textSize="40dp"
+            android:id="@+id/btndot"
+            android:onClick="onClickNumber"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="0"
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="95dp"
+            android:textSize="40dp"
+            android:onClick="onClickNumber"
+            android:id="@+id/btn0"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <Button
+            android:text="="
+            android:layout_width="89dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="95dp"
+            android:textSize="40dp"
+            android:id="@+id/btnequal"
+            android:onClick="onClickEqual"
+            android:textColor="?attr/colorPrimary" />
+
+        <Button
+            android:text="/"
+            android:background="@android:color/darker_gray"
+            android:layout_height="95dp"
+            android:layout_width="92dp"
+            android:textSize="40dp"
+            android:onClick="onClickOperator"
+            android:id="@+id/btndiv"
+            android:textColor="?attr/actionModeSplitBackground" />
+    </LinearLayout>
+
+
+</LinearLayout>
